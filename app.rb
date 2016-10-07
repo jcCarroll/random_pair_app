@@ -6,5 +6,7 @@ get '/' do
 end
 
 post '/names' do
-  "Hello World"
+    names = params[:user_names].split.map(&:capitalize).join(' ')
+    random_names_array = randomizer(names)
+    erb :get_names_again, :locals => {:random_names_array => random_names_array}
 end
