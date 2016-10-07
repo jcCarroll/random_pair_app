@@ -15,5 +15,5 @@ def fix(names)
             group_number += 1
         end
     end
-    group_string = group_string_two + group_string_three
+    # group_string = group_string_two + group_string_three
 end

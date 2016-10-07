@@ -11,4 +11,5 @@ def randomizer(names)
     else
         sliced
     end
+    sliced
 end
