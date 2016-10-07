@@ -7,7 +7,7 @@ def fix(names)
     else
         names.length == 2
         names.each do |pair|
-            group<< pair[0] + " and " + pair[1] + "<br>"
+            group << pair[0] + " and " + pair[1] + "<br>"
         end
     end
     group
