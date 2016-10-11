@@ -1,5 +1,6 @@
 # ["lyle", "jacob", "jeremy", "ysabele", "lotfi", "cyndi", "don", "stephanie", "susan", "adam", "mike", "maxx", "john"]
 
+### This is the work everyone just stole form me ###
 def randomizer(names)
     names_array = names.split(",")
     shuffled = names_array.shuffle
