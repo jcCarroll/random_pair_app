@@ -1,6 +1,14 @@
-<form method = "post" action = "names">
+<!--<form method = "post" action = "names">
 	<input type = "text" autofocus="autofocus" name = "user_names">
 	<input type = "submit">
-</form>
+</form>!-->
 
-lyle, jacob, jeremy, ysabele, lotfi, cyndi, don, stephanie, susan, adam, mike, maxx, john
+
+
+
+<form method = "post" action = "names">
+	 <% num.to_i.times do %>
+		<input type = "text" name = "user_names[]">
+		<% end %>
+	<input type = "submit">
+</form>
