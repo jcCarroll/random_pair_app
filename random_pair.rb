@@ -1,3 +1,14 @@
+def random_pair(names)
+    names_list = cap_names(names)
+    random_names_array = randomizer(names_list)
+    name_pairs = fix(random_names_array)
+    name_pairs
+end
+
+def cap_names(caps)
+    caps = caps.map(&:capitalize)
+end
+
 def randomizer(names)
     shuffled = names.shuffle
     sliced = shuffled.each_slice(2).to_a
@@ -8,10 +19,6 @@ def randomizer(names)
     else
         sliced
     end
-end
-
-def cap_names(caps)
-    caps = caps.map(&:capitalize)
 end
 
 def fix(names)

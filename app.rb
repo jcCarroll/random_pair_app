@@ -17,10 +17,7 @@ get '/names' do
 end
 
 post '/names' do
-    num = params[:num]
     names = params[:user_names]
-    names = cap_names(names)
-    random_names_array = randomizer(names)
-    name_pairs = fix(random_names_array)
-    erb :get_names_again, :locals => {:name_pairs => name_pairs}
+    random_pairs = random_pair(names)
+    erb :get_names_again, :locals => {:random_pairs => random_pairs}
 end
