@@ -1,6 +1,3 @@
-# ["lyle", "jacob", "jeremy", "ysabele", "lotfi", "cyndi", "don", "stephanie", "susan", "adam", "mike", "maxx", "john"]
-
-### This is the work everyone just stole fromm me ###
 def randomizer(names)
     names = names.map(&:capitalize)
     shuffled = names.shuffle
