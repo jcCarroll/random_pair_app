@@ -2,7 +2,7 @@ require 'sinatra'
 require_relative 'random_pair.rb'
 
 get '/' do
-    erb :get_number
+    erb :number_box
 end
 
 post '/number' do

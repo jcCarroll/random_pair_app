@@ -1,12 +1,15 @@
 <p>How many people are in you list?</p>
 
-<input type="text" id="myInput" oninput="myFunction()">
-
-<p id="demo"></p>
+<form method = "post" action = "number">
+    <input type="text" id="myInput"
+    oninput="myFunction()">
+    
+    <p id="demo"></p>
 
 <script>
-function myFunction() {
-    var x = document.getElementById("myInput").value;
-    document.getElementById("demo").innerHTML = "Enter your names: " + x;
-}
+    function myFunction() {
+        var x = document.getElementById("myInput").value;
+        document.getElementById("demo").innerHTML = "Enter your names: " + x;
+        }
 </script>
+</form>
