@@ -8,7 +8,12 @@ end
 
 post '/number' do
     num = params[:student_number]
-    redirect '/names?num=' + num
+    redirect '/names?student_number=' + num
+end
+
+get '/names' do
+    num = params[num]
+    erb :get_names, :locals => {:num => num}
 end
 
 post '/names' do
