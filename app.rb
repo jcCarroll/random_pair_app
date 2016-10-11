@@ -3,10 +3,16 @@ require_relative 'random_pair.rb'
 require_relative 'formatter.rb'
 
 get '/' do
-    erb :get_names
+    erb :get_number
+end
+
+post '/number' do
+    num = params[:student_number]
+    redirect '/names?num=' + num
 end
 
 post '/names' do
+    num = params[:num]
     names = params[:user_names].split.map(&:capitalize).join(' ')
     random_names_array = randomizer(names)
     name_pairs = fix(random_names_array)
