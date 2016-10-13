@@ -4,7 +4,7 @@
 
 
 <form method = "post" action = "names" id = "text_box">
-    <input type ="text" autofocus = "autofocus" id ="myInput" oninput = "myFunction()" >
+    <input type ="number" min = 2 autofocus = "autofocus" id ="myInput" oninput = "myFunction()" >
     <p id = "demo"></p>
     <br>
     <input type = "submit">
@@ -20,7 +20,8 @@
             var input = document.createElement("input");
             input.type = "text";
             input.name = "text" + i;
-            input.id = "marv"
+            input.id = "marv";
+            required;
             document.getElementById("demo").appendChild(input).value;
             }
     }
