@@ -6,12 +6,12 @@ get '/' do
 end
 
 post '/number' do
-    num = params[:student_number]
-    redirect '/names?num=' + num
+    names = params[:students]
+    redirect '/names?students=' + names
 end
 
 get '/names' do
-    num = params[:num]
+    names = params[:names]
     erb :get_names, :locals => {:num => num}
 end
 
