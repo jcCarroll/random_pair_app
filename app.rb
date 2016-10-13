@@ -6,7 +6,7 @@ get '/' do
 end
 
 post '/number' do
-    names = params[:students]
+    names = params[:myInput]
     redirect '/names?students=' + names
 end
 
