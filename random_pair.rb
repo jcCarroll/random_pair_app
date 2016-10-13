@@ -1,4 +1,4 @@
-def random_pair(names)
+def random_pair(names,number)
     names_list = cap_names(names)
     random_names_array = randomizer(names_list)
     name_pairs = fix(random_names_array)
@@ -9,7 +9,7 @@ def cap_names(caps)
     caps = caps.map(&:capitalize)
 end
 
-def randomizer(names)
+def randomizer(names,number)
     shuffled = names.shuffle
     sliced = shuffled.each_slice(2).to_a
     if shuffled.length % 2 == 1
