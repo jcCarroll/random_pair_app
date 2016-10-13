@@ -1,4 +1,4 @@
-<center><p>How many people are in class today?</p>
+<p>How many people are in class today?</p>
 
 <input type="text" id="myInput" oninput="myFunction()">
 
@@ -8,20 +8,16 @@
 function myFunction() {
     var x = document.getElementById("myInput").value;
     var y = "";
-    for (i = 0; i < x; i++) {
-    
-    }
-    //var y = is equivelent to y = 
+    for (i = 0; i < x; i++) 
     document.getElementById("demo").innerHTML = "Enter their names in the boxes below: " + y;
-for (var i = 1; i <= x; i++){
-var input = document.createElement("input");
-// var c = document.body.children;
-input.type = "text";
-document.getElementById("demo").appendChild(input);
+        for (var i = 1; i <= x; i++){
+        var input = document.createElement("input");
+        input.type = "text";
+        document.getElementById("demo").appendChild(input);
+        }
 }
- 
-}
+
 </script>
 <form method = "post" action = "number_of_students">
 <input type="submit" value="Enter Names">
-</form></center>
+</form>
