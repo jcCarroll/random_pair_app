@@ -16,7 +16,7 @@ get '/names' do
 end
 
 post '/names' do
-    names = params[:user_names]
+    names = params.values
     random_pairs = random_pair(names)
     erb :get_names_again, :locals => {:random_pairs => random_pairs}
 end
