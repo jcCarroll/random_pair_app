@@ -8,15 +8,15 @@
 function myFunction() {
     var x = document.getElementById("myInput").value;
     for (i = 0; i < x; i++) 
-    document.getElementById("demo").innerHTML = "Enter their names in the boxes below:<br> ";
+    document.getElementById("demo").innerHTML = "Enter their names in the boxes below:<br>";
         for (var i = 1; i <= x; i++){
         var input = document.createElement("input");
         input.type = "text";
         document.getElementById("demo").appendChild(input);
         }
 }
-
 </script>
-<form method = "post" action = "number_of_students">
-<input type="submit" value="Enter Names">
+
+<form method = "post" action = "number">
+    <input type="submit" value="Enter Names">
 </form>
