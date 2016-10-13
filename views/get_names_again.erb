@@ -1,7 +1,29 @@
+Here is your randomly paired list:<br>
+<br>
 <%= random_pairs %>
 <br>
-<form method = "post" action = "number">
-	<input type = "number" min = 1 max = 100
-    autofocus ="autofocus" name = "student_number">
-	<input type = "submit">
-</form>
+Do you have another list of names to pair?<br>
+<br>
+How many students are in your class today?<br>
+<br>
+<form method = "post" action = "names" id= "text_box">
+    <input type="text" id="myInput" oninput="myFunction()" >
+    <p id="demo"></p>
+    <br>
+    <input type = "submit">
+</form></center>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("myInput").value;
+        var y = "";
+        for (i = 0; i < x; i++) 
+        document.getElementById("demo").innerHTML = "Enter their names in the boxes below:<br>";
+            for (var i = 1; i <= x; i++){
+            var input = document.createElement("input");
+            input.type = "text";
+            input.name = "text" + i;
+            document.getElementById("demo").appendChild(input).value;
+            }
+    }
+</script>
