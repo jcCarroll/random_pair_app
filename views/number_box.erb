@@ -1,16 +1,14 @@
-
 <p>How many people are in class today?</p>
 <input type="text" id="myInput" oninput="myFunction()">
 <p id="demo"></p>
+
 <script>
 function myFunction() {
     var x = document.getElementById("myInput").value;
     var y = "";
-    for (i = 0; i < 11; i++) {
-      code to create a box
-        y += x; <------might not need this
+    for (i = 0; i < x; i++) {
+        y += x;
     }
-    //var y = is equivelent to y = 
     document.getElementById("demo").innerHTML = "Enter their names in the boxes below: " + y;
 }
 </script>
