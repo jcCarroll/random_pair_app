@@ -5,24 +5,11 @@ Here is your randomly paired list:<br>
 Do you have another list of names to pair?<br>
 <br>
 How many names are on your list?<br>
-<form method = "post" action = "names" id= "text_box">
-    <input type="text" autofocus = "autofocus" id="myInput" oninput="myFunction()" >
-    <p id="demo"></p>
+<form method = "post" action = "names" id = "text_box">
+    <input type ="number" min = 2 autofocus = "autofocus" id ="myInput" oninput = "myFunction()" >
+    <p id = "demo"></p>
     <br>
     <input type = "submit">
 </form></center>
 
-<script>
-    function myFunction() {
-        var x = document.getElementById("myInput").value;
-        var y = "";
-        for (i = 0; i < x; i++) 
-        document.getElementById("demo").innerHTML = "Enter their names in the boxes below:<br>";
-            for (var i = 1; i <= x; i++){
-            var input = document.createElement("input");
-            input.type = "text";
-            input.name = "text" + i;
-            document.getElementById("demo").appendChild(input).value;
-            }
-    }
-</script>
+<script src = "js/auto_box.js"></script>
